@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+	<head>
+		<meta charset="UTF-8">
+		<title>Bower</title>
+
+		<!-- Importa o Libreries -->
+		<script src="../lib/angular/angular.js"></script>
+
+		<!-- Angular -->
+		<script>
+			//Module
+			angular.module("demo", []);
+
+			//Controller
+			angular.module("demo").controller("demoController", function($scope){
+				//App
+				$scope.app = "Bower";
+			});
+		</script>
+	</head>
+	<body ng-controller="demoController">
+		{{app}}
+	</body>
+</html>
